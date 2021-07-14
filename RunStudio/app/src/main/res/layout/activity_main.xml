@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:ael_duration="1000"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:id="@+id/settGen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvv1"
+                android:textColor="@color/colorAccent"
+                android:textSize="26sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/gender" />
+
+            <TextView
+                android:id="@+id/settSettGen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvv1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="28dp"
+                android:textSize="26sp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/tap"
+                android:textColor="@color/colorBoleeToosklee"/>
+
+            <TextView
+                android:id="@+id/settWei"
+                android:layout_below="@id/settGen"
+                android:text="@string/weight"
+                android:textSize="26sp"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/settUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:gravity="center_vertical"
+                android:layout_below="@+id/settSettGen"
+                android:layout_alignParentEnd="true"
+                android:textSize="26sp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/kg_pounds"
+                android:textColor="@color/colorBoleeToosklee"
+                android:layout_marginBottom="24dp" />
+
+            <EditText
+                android:id="@+id/settVal"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/settSettGen"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="28dp"
+                android:backgroundTint="@android:color/transparent"
+                android:ems="10"
+                android:hint="@string/value"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="time"
+                android:textSize="26sp"
+                tools:targetApi="o"
+                android:textCursorDrawable="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settPronacia"
+                android:layout_below="@id/settWei"
+                android:text="@string/pronation"
+                android:textSize="26sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settSettPronacia"
+                android:layout_below="@+id/settUnit"
+                android:layout_alignParentEnd="true"
+                android:textSize="26sp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/tap"
+                android:textColor="@color/colorBoleeToosklee"
+                android:layout_marginBottom="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settReamWidth"
+                android:layout_below="@id/settPronacia"
+                android:text="@string/ream"
+                android:textSize="26sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="28dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/settSettReamWidth"
+                android:layout_below="@+id/settSettPronacia"
+                android:layout_alignParentEnd="true"
+                android:textSize="26sp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/tap"
+                android:textColor="@color/colorBoleeToosklee"
+                android:layout_marginBottom="28dp"/>
+
+            <TextView
+                android:id="@+id/tvv1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:text="@string/action_settings"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/apply"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settSettReamWidth"
+                android:padding="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp"
+                android:background="@drawable/border"
+                android:textSize="20sp"
+                android:textColor="@color/colorAccent"
+                android:text="@string/apply" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:tabBackground="@color/colorPrimary"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorAccent"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorAccent"
+            app:tabTextColor="@color/colorBoleeToosklee" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

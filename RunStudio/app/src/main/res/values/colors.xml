@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F5F5F5</color>
+    <color name="colorPrimaryDark">#333333</color>
+    <color name="colorAccent">#171717</color>
+    <color name="colorBoleeToosklee">#747474</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBasketball">#FFB247</color>
+    <color name="colorRunning">#7B98FF</color>
+    <color name="colorPressed">#C2C2C2</color>
+    <color name="colorTemnoSeriy">#292929</color>
+</resources>

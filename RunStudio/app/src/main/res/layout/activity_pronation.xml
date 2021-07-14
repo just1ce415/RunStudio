@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pronation">
+
+    <LinearLayout
+        android:id="@+id/prll1"
+        android:layout_below="@+id/TellAbPron"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rbrimg1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/pronation"
+            app:srcCompat="@drawable/hypo" />
+
+        <TextView
+            android:id="@+id/rbptv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hypopronation"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prll2"
+        android:layout_below="@+id/TellAbPron"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rbrimg2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/pronation"
+            app:srcCompat="@drawable/normal" />
+
+        <TextView
+            android:id="@+id/rbptv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/normal_pronation"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbp2"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prll3"
+        android:layout_below="@+id/TellAbPron"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/rbrimg3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/pronation"
+            app:srcCompat="@drawable/hyper" />
+
+        <TextView
+            android:id="@+id/rbptv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/hyperpronation"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/rbp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/howto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_determine"
+        android:layout_below="@+id/prll1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TellAbPron"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:text="@string/genweidescr"
+        android:textColor="@color/colorTemnoSeriy"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/next3"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/next"
+        android:layout_below="@+id/prll3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="9dp"
+        app:srcCompat="@drawable/strela" />
+
+</RelativeLayout>

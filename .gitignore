@@ -19,7 +19,15 @@ out/
 
 # Gradle files
 .gradle/
+gradle/
 build/
+build.gradle
+gradle.properties
+local.properties
+gradlew
+gradlew.bat
+settings.gradle
+proguard-rules.pro
 
 # Local configuration file (sdk path, etc)
 local.properties
